@@ -17,7 +17,7 @@ function App() {
       const data = await res.json();
 
       setNews(data.articles);
-      console.log(data.articles);
+      console.log(data.articles || []);
       
     } catch (error) {
 
